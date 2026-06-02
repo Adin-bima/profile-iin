@@ -25,10 +25,10 @@ let fabOpen = false;
       job2Period: '2023 – 2024',
       job2Role: 'Guru Les Privat',
       job2Duties: [
-        'Memberikan bimbingan belajar secara individual sesuai kebutuhan siswa.',
+        'Memberikan sesi bimbingan belajar individual sesuai kebutuhan belajar siswa.',
         'Menyesuaikan metode pengajaran dengan kemampuan dan gaya belajar siswa.',
         'Membantu siswa memahami materi pelajaran yang sulit di sekolah.',
-        'Memantau perkembangan belajar siswa dan melaporkan hasilnya kepada orang tua.'
+        'Memantau perkembangan belajar siswa dan melaporkan hasil belajar kepada orang tua.'
       ],
       orgs: [
         { year: '2020–2021', role: 'Sekretaris HMPS PGMI' },
@@ -38,7 +38,7 @@ let fabOpen = false;
         { year: '2022–2023', role: 'BEM Fakultas Agama Islam' },
       ],
       edu: [
-        { school: 'UIN Mataram', detail: 'S2 Manajemen Pendidikan Islam', year: '2024–2025 · IPK 3.92 (Cum Laude)' },
+        { school: 'Universitas Islam Negeri Mataram', detail: 'S2 Manajemen Pendidikan Islam', year: '2024–2025 · IPK 3.92 (Cum Laude)' },
         { school: 'Universitas Muhammadiyah Mataram', detail: 'S1 Pendidikan Guru Madrasah Ibtidaiyah', year: '2019–2023 · IPK 3.91 (Cum Laude)' },
         { school: 'SMA Negeri 1 Bolo', detail: '', year: '2016–2019' },
         { school: 'SMP Negeri 1 Bolo', detail: '', year: '2013–2016' },
@@ -72,14 +72,14 @@ let fabOpen = false;
         'Guiding students in character development and discipline.',
         'Coordinating with parents regarding student progress and development.'
       ],
-      job2Company: 'Private Tutoring',
+      job2Company: 'Les Privat',
       job2Period: '2023 – 2024',
-      job2Role: 'Private Tutor',
+      job2Role: 'Private Tutoring Teacher',
       job2Duties: [
-        'Providing personalized one-on-one tutoring tailored to each student\'s needs.',
-        'Adapting teaching methods to suit individual learning styles and abilities.',
-        'Helping students grasp difficult school subjects with clarity.',
-        'Monitoring student progress and regularly reporting to parents.'
+        'Delivering individualized tutoring sessions based on each student\'s learning needs.',
+        'Adapting teaching methods to match students\' abilities and learning styles.',
+        'Helping students understand difficult school subject matter.',
+        'Monitoring student learning progress and reporting outcomes to parents.'
       ],
       orgs: [
         { year: '2020–2021', role: 'Secretary of HMPS PGMI' },
@@ -89,7 +89,7 @@ let fabOpen = false;
         { year: '2022–2023', role: 'Faculty of Islamic Studies Student Senate' },
       ],
       edu: [
-        { school: 'UIN Mataram', detail: 'Master\'s – Islamic Education Management', year: '2024–2025 · GPA 3.92 (Cum Laude)' },
+        { school: 'Universitas Islam Negeri Mataram', detail: 'Master\'s – Islamic Education Management', year: '2024–2025 · GPA 3.92 (Cum Laude)' },
         { school: 'Universitas Muhammadiyah Mataram', detail: 'Bachelor\'s – Madrasah Ibtidaiyah Teacher Education', year: '2019–2023 · GPA 3.91 (Cum Laude)' },
         { school: 'SMA Negeri 1 Bolo', detail: 'Senior High School', year: '2016–2019' },
         { school: 'SMP Negeri 1 Bolo', detail: 'Junior High School', year: '2013–2016' },
