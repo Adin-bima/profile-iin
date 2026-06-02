@@ -191,91 +191,13 @@ let fabOpen = false;
     setTimeout(() => t.classList.remove('show'), 3000);
   }
 
-  function waitForImages(root) {
-    return Promise.all([...root.querySelectorAll('img')].map((img) => {
-      if (img.complete && img.naturalWidth > 0) return Promise.resolve();
-      return new Promise((resolve) => {
-        img.addEventListener('load', resolve, { once: true });
-        img.addEventListener('error', resolve, { once: true });
-      });
-    }));
-  }
-
-  function renderSquareProfilePhoto(sourceImg, size) {
-    const canvas = document.createElement('canvas');
-    canvas.width = size;
-    canvas.height = size;
-    const ctx = canvas.getContext('2d');
-    const iw = sourceImg.naturalWidth;
-    const ih = sourceImg.naturalHeight;
-    const scale = Math.max(size / iw, size / ih);
-    const dw = iw * scale;
-    const dh = ih * scale;
-    const dx = (size - dw) / 2;
-    const dy = 0;
-    ctx.drawImage(sourceImg, dx, dy, dw, dh);
-    return canvas.toDataURL('image/png');
-  }
-
-  /** html2canvas does not render object-fit reliably; use a pre-cropped square image in a fixed-size circle. */
-  function fixProfilePhotoForCapture(clonedDoc) {
-    const box = clonedDoc.querySelector('.photo-placeholder');
-    const sourceImg = document.querySelector('.photo-placeholder img');
-    if (!box || !sourceImg?.naturalWidth) return;
-
-    const px = 140;
-    const dataUrl = renderSquareProfilePhoto(sourceImg, px * 2);
-
-    box.style.cssText = [
-      'position:relative',
-      `width:${px}px`,
-      `height:${px}px`,
-      `min-width:${px}px`,
-      `min-height:${px}px`,
-      'aspect-ratio:1/1',
-      'flex-shrink:0',
-      'box-sizing:border-box',
-      'border-radius:50%',
-      'overflow:hidden',
-      'border:4px solid #1A5C58',
-      'background:#333',
-    ].join(';');
-
-    const clonedImg = box.querySelector('img');
-    if (!clonedImg) return;
-    clonedImg.src = dataUrl;
-    clonedImg.style.cssText = [
-      'position:absolute',
-      'inset:0',
-      `width:${px}px`,
-      `height:${px}px`,
-      'max-width:none',
-      'display:block',
-      'object-fit:fill',
-    ].join(';');
-  }
-
-  function getCaptureOptions() {
-    return {
-      scale: 2,
-      useCORS: true,
-      backgroundColor: '#ffffff',
-      onclone: fixProfilePhotoForCapture,
-    };
-  }
-
-  async function captureCV() {
-    const cv = document.getElementById('cv');
-    await waitForImages(cv);
-    return html2canvas(cv, getCaptureOptions());
-  }
-
   async function downloadPDF() {
     toggleFab();
     const t = translations[currentLang];
     showToast(t.toastPDF);
     const { jsPDF } = window.jspdf;
-    const canvas = await captureCV();
+    const cv = document.getElementById('cv');
+    const canvas = await html2canvas(cv, { scale: 2, useCORS: true, backgroundColor: '#ffffff' });
     const imgData = canvas.toDataURL('image/jpeg', 0.95);
     const pdf = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
     const pdfW = pdf.internal.pageSize.getWidth();
@@ -289,7 +211,8 @@ let fabOpen = false;
     toggleFab();
     const t = translations[currentLang];
     showToast(t.toastImg);
-    const canvas = await captureCV();
+    const cv = document.getElementById('cv');
+    const canvas = await html2canvas(cv, { scale: 2, useCORS: true, backgroundColor: '#ffffff' });
     const link = document.createElement('a');
     link.download = 'CV_St_Mutmainah.png';
     link.href = canvas.toDataURL('image/png');

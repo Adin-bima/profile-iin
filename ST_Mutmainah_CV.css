@@ -45,28 +45,15 @@
   }
 
   .photo-placeholder {
-    position: relative;
     width: 140px;
     height: 140px;
-    min-width: 140px;
-    min-height: 140px;
-    aspect-ratio: 1 / 1;
-    flex-shrink: 0;
-    box-sizing: border-box;
     border-radius: 50%;
     background: linear-gradient(135deg, #555 0%, #333 100%);
     border: 4px solid var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
-  }
-
-  .photo-placeholder img {
-    position: absolute;
-    inset: 0;
-    width: 140px;
-    height: 140px;
-    max-width: none;
-    object-fit: cover;
-    object-position: center top;
   }
 
   .photo-placeholder svg {
