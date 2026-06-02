@@ -10,7 +10,7 @@ let fabOpen = false;
       sectionEdu: 'Pendidikan',
       sectionLang: 'Bahasa',
       sectionSkill: 'Keterampilan',
-      summary: 'Seorang tenaga pendidik profesional dengan latar belakang S1 Pendidikan Guru Madrasah Ibtidaiyah (IPK 3.91, Cum Laude) dan S2 Manajemen Pendidikan Islam dari UIN Mataram (IPK 3.92, Cum Laude). Memiliki pengalaman mengajar langsung di SDN Abata Lombok serta membimbing peserta bimbingan belajar olimpiade IPS. Berdedikasi tinggi dalam menciptakan lingkungan belajar yang kondusif, inovatif, dan menyenangkan. Mampu berkomunikasi dengan baik, bekerja secara kolaboratif, serta berkomitmen untuk terus berkembang dalam dunia pendidikan.',
+      summary: 'Seorang tenaga pendidik profesional dengan latar belakang S1 Pendidikan Guru Madrasah Ibtidaiyah (IPK 3.91, Cum Laude) dan S2 Manajemen Pendidikan Islam dari UIN Mataram (IPK 3.92, Cum Laude). Memiliki pengalaman mengajar langsung di SDN Abata Lombok serta sebagai guru les privat. Berdedikasi tinggi dalam menciptakan lingkungan belajar yang kondusif, inovatif, dan menyenangkan. Mampu berkomunikasi dengan baik, bekerja secara kolaboratif, serta berkomitmen untuk terus berkembang dalam dunia pendidikan.',
       job1Company: 'SDN Abata Lombok',
       job1Period: '2024 – Sekarang',
       job1Role: 'Guru Kelas',
@@ -21,14 +21,14 @@ let fabOpen = false;
         'Membimbing siswa dalam pengembangan karakter dan kedisiplinan.',
         'Berkoordinasi dengan orang tua siswa terkait perkembangan belajar anak.'
       ],
-      job2Company: 'Bimbingan Belajar Olimpiade IPS',
-      job2Period: '2026 – Sekarang',
-      job2Role: 'Pembimbing',
+      job2Company: 'Les Privat',
+      job2Period: '2023 – 2024',
+      job2Role: 'Guru Les Privat',
       job2Duties: [
-        'Membimbing peserta dalam persiapan olimpiade Ilmu Pengetahuan Sosial (IPS).',
-        'Menyusun materi dan strategi belajar sesuai kompetensi olimpiade.',
-        'Melatih kemampuan analisis dan pemecahan soal olimpiade IPS.',
-        'Memantau perkembangan dan hasil belajar peserta bimbingan.'
+        'Memberikan bimbingan belajar secara individual sesuai kebutuhan siswa.',
+        'Menyesuaikan metode pengajaran dengan kemampuan dan gaya belajar siswa.',
+        'Membantu siswa memahami materi pelajaran yang sulit di sekolah.',
+        'Memantau perkembangan belajar siswa dan melaporkan hasilnya kepada orang tua.'
       ],
       orgs: [
         { year: '2020–2021', role: 'Sekretaris HMPS PGMI' },
@@ -61,7 +61,7 @@ let fabOpen = false;
       sectionEdu: 'Education',
       sectionLang: 'Languages',
       sectionSkill: 'Skills',
-      summary: 'A dedicated professional educator with a Bachelor\'s degree in Madrasah Ibtidaiyah Teacher Education (GPA 3.91, Cum Laude) and a Master\'s degree in Islamic Education Management from UIN Mataram (GPA 3.92, Cum Laude). Experienced in classroom teaching at SDN Abata Lombok and coaching students for Social Studies (IPS) olympiad preparation. Highly committed to creating a conducive, innovative, and engaging learning environment. Strong communicator, collaborative team player, and driven to continuously grow within the field of education.',
+      summary: 'A dedicated professional educator with a Bachelor\'s degree in Madrasah Ibtidaiyah Teacher Education (GPA 3.91, Cum Laude) and a Master\'s degree in Islamic Education Management from UIN Mataram (GPA 3.92, Cum Laude). Experienced in classroom teaching at SDN Abata Lombok and private tutoring. Highly committed to creating a conducive, innovative, and engaging learning environment. Strong communicator, collaborative team player, and driven to continuously grow within the field of education.',
       job1Company: 'SDN Abata Lombok',
       job1Period: '2024 – Present',
       job1Role: 'Classroom Teacher',
@@ -72,14 +72,14 @@ let fabOpen = false;
         'Guiding students in character development and discipline.',
         'Coordinating with parents regarding student progress and development.'
       ],
-      job2Company: 'Social Studies Olympiad Coaching',
-      job2Period: '2026 – Present',
-      job2Role: 'Coach',
+      job2Company: 'Private Tutoring',
+      job2Period: '2023 – 2024',
+      job2Role: 'Private Tutor',
       job2Duties: [
-        'Coaching participants in preparation for Social Studies (IPS) olympiad competitions.',
-        'Developing learning materials and strategies aligned with olympiad competencies.',
-        'Training analytical thinking and problem-solving skills for IPS olympiad questions.',
-        'Monitoring participant progress and learning outcomes.'
+        'Providing personalized one-on-one tutoring tailored to each student\'s needs.',
+        'Adapting teaching methods to suit individual learning styles and abilities.',
+        'Helping students grasp difficult school subjects with clarity.',
+        'Monitoring student progress and regularly reporting to parents.'
       ],
       orgs: [
         { year: '2020–2021', role: 'Secretary of HMPS PGMI' },
